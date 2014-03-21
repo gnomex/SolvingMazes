@@ -4,13 +4,15 @@ import javax.swing.JFrame;
 
 import controller.AgenteBusca;
 
-import model.Labirinto;
-
 import view.LabirintoGrid;
 
 
 public class Teste extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	/**
 	 * @param args
 	 */
@@ -30,7 +32,7 @@ public class Teste extends JFrame {
 		final Teste t = new Teste();
 		t.setVisible(true);
 		t.lab.setEnabled(false);
-		t.lab.getAgente().setTipoBusca(AgenteBusca.Busca.PROFUNDIDADE);
+		t.lab.getAgente().setTipoBusca(AgenteBusca.Busca.AESTRELA);
 		t.lab.getAgente().iniciarBusca();
 		t.lab.setEnabled(true);
 	}
